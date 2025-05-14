@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sort Fruits</title>
+  <script>
+    var fruits = ["Mango", "Apple", "Banana", "Orange"];
+
+    function sortFruits() {
+      fruits.sort().reverse();
+      document.getElementById("output").innerHTML = fruits.join(", ");
+    }
+  </script>
+</head>
+<body>
+  <button onclick="sortFruits()">Sort Fruits Descending</button>
+  <p id="output"></p>
+</body>
+</html>

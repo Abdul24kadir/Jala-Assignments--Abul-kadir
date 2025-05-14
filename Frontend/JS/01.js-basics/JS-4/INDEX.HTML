@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Object Access</title>
+  <script>
+    var person = {
+      firstname: "John",
+      lastname: "Doe"
+    };
+
+    document.addEventListener("DOMContentLoaded", function(){
+      document.getElementById("output").innerHTML = 
+        person.firstname + "<br>" + person['lastname'];
+    });
+  </script>
+</head>
+<body>
+  <h2>Object Access Example</h2>
+  <div id="output"></div>
+</body>
+</html>

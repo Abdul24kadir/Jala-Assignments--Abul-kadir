@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animations and Pagination</title>
+  <style>
+    /* Animation */
+    .animate-box {
+      width: 100px;
+      height: 100px;
+      background: coral;
+      animation-name: moveBox;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
+    }
+
+    @keyframes moveBox {
+      0% { margin-left: 0; }
+      50% { margin-left: 200px; }
+      100% { margin-left: 0; }
+    }
+
+    /* Pagination (hoverable) */
+    .pagination {
+      display: inline-block;
+    }
+
+    .pagination a {
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+      margin: 0 4px;
+      border: 1px solid #ddd;
+    }
+
+    .pagination a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Animation Example</h2>
+  <div class="animate-box"></div>
+
+  <h2>Pagination Example</h2>
+  <div class="pagination">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+  </div>
+
+</body>
+</html>

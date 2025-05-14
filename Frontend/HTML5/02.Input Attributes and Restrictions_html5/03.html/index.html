@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Restrictions</title>
+</head>
+<body>
+
+  <h1>Form with Input Restrictions</h1>
+
+  <form>
+    <label for="text">Text (Required):</label>
+    <input type="text" id="text" name="text" required><br><br>
+
+    <label for="max">Max Value (10):</label>
+    <input type="number" id="max" name="max" max="10"><br><br>
+
+    <label for="maxlength">Max Length (5 characters):</label>
+    <input type="text" id="maxlength" name="maxlength" maxlength="5"><br><br>
+
+    <label for="min">Min Value (1):</label>
+    <input type="number" id="min" name="min" min="1"><br><br>
+
+    <label for="readonly">Read Only:</label>
+    <input type="text" id="readonly" name="readonly" value="This is read-only" readonly><br><br>
+
+    <label for="size">Size (20 characters):</label>
+    <input type="text" id="size" name="size" size="20"><br><br>
+
+    <label for="disabled">Disabled:</label>
+    <input type="text" id="disabled" name="disabled" value="Cannot edit" disabled><br><br>
+  </form>
+
+</body>
+</html>

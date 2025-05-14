@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Counter: <span id="counter">0</span></h2>
+<button onclick="counter.value++">Count</button>
+
+<script>
+let counter = {
+  _value: 0,
+  get value() {
+    return this._value;
+  },
+  set value(val) {
+    this._value = val;
+    document.getElementById("counter").innerText = this._value;
+  }
+};
+</script>
+
+</body>
+</html>

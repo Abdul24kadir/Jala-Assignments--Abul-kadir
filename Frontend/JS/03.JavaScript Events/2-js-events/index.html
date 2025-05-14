@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form onsubmit="return validateForm()">
+  <input type="text" id="myInput" placeholder="Enter something">
+  <button type="submit">Submit</button>
+</form>
+
+<p id="error"></p>
+
+<script>
+function validateForm() {
+  let input = document.getElementById("myInput").value;
+  if (input == "") {
+    document.getElementById("error").innerText = "Input cannot be empty!";
+    return false;
+  }
+}
+</script>
+
+</body>
+</html>

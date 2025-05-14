@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Layout</title>
+  <style>
+    table {
+      border: 1px solid black;
+      width: 400px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+    .fixed-table {
+      table-layout: fixed;
+    }
+
+    .auto-table {
+      table-layout: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Fixed Table Layout</h3>
+  <table class="fixed-table">
+    <tr><th>Column 1</th><th>Column 2</th></tr>
+    <tr><td>Short</td><td>This is a very long text in a fixed layout</td></tr>
+  </table>
+
+  <h3>Auto Table Layout (default)</h3>
+  <table class="auto-table">
+    <tr><th>Column 1</th><th>Column 2</th></tr>
+    <tr><td>Short</td><td>This is a very long text in an auto layout</td></tr>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For/In Loop</title>
+  <script>
+    var student = {name: "Ali", age: 20, grade: "A"};
+    var text = "";
+    for (var key in student) {
+      text += key + " : " + student[key] + "<br>";
+    }
+    document.addEventListener("DOMContentLoaded", function(){
+      document.getElementById("output").innerHTML = text;
+    });
+  </script>
+</head>
+<body>
+  <h2>For/In Loop Example</h2>
+  <div id="output"></div>
+</body>
+</html>
